@@ -1,0 +1,118 @@
+body {
+    background-color: green !important;
+    font-family: serif !important;
+}
+
+.card {
+    height: 63vh;
+    border-radius: 20px !important;
+}
+
+.card-number {
+    margin: 0;
+    font-size: 11rem;
+}
+
+.card.hearts::after,
+.card.hearts::before {
+    content: "\2665";
+    display: block;
+    position: absolute;
+    font-size: 6rem;
+    width: auto;
+    top: -1.6rem;
+    left: .6rem;
+    color: red;
+}
+
+.card.hearts::before {
+    bottom: -1.6rem;
+    right: .6rem;
+    transform: rotate(180deg);
+}
+
+.card.diams::after,
+.card.diams::before {
+    content: "\2666";
+    display: block;
+    position: absolute;
+    font-size: 6rem;
+    width: auto;
+    top: -1.6rem;
+    left: .6rem;
+    color: red;
+}
+
+.card.diams::before {
+    bottom: -1.6rem;
+    right: .6rem;
+    transform: rotate(180deg);
+}
+
+.card.clubs::after,
+.card.clubs::before {
+    content: "\2663";
+    display: block;
+    position: absolute;
+    font-size: 6rem;
+    width: auto;
+    top: -1.6rem;
+    left: .6rem;
+}
+
+.card.clubs::before {
+    bottom: -1.6rem;
+    right: .6rem;
+    transform: rotate(180deg);
+}
+
+.card.spades::after,
+.card.spades::before {
+    content: "\2660";
+    display: block;
+    position: absolute;
+    font-size: 7rem;
+    width: auto;
+    top: -1.6rem;
+    left: .6rem;
+}
+
+.card.spades::before {
+    bottom: -1.6rem;
+    right: .6rem;
+    transform: rotate(180deg);
+}
+
+/* 
+<i class="fa fa-info-circle" aria-hidden="true" data-tooltip="Hover Text 1"></i>
+  Block Text 1
+</div>
+
+#text::after{
+    content: attr(title);
+} 
+
+
+
+i[data-tooltip]::after {
+  content: attr(data-tooltip);
+  width: max-content;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  transform: scale(0);
+  transition: 0.2s ease-in-out;
+}
+
+i[data-tooltip]:hover::after {
+  transform: scale(1);
+  bottom: -150%;
+}
+
+document.querySelector("#text").setAttribute("title" , "Nuevo texto")
+document.querySelector("#text").title = "Nuevo texto";
+*/
